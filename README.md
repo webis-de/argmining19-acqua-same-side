@@ -23,7 +23,7 @@ This set of option would perform an experiment on the training set, using alread
 
 
 ### rule-based 
-We considered the same-side classification as a sentiment analysis task. Given two arguments, both with negative as well as positive sentiments would be on the same side. We used a list of positive and negative words from Minqing Hu and Bing Liu, Mining and summarizing customer reviews and build rule-based classifier to assign each argument in a pair a positive or negative label. We used negation before the word to swap the polarity. If the argument does not contain any of the sentiment words, we used a random label assignment.
+We considered the same-side classification as a sentiment analysis task. Given two arguments, both with negative as well as positive sentiments would be on the same side. We used a list of positive and negative words from Minqing Hu and Bing Liu, Mining and summarizing customer reviews and build rule-based classifier to assign each argument in a pair a positive or negative label. If the argument does not contain any of the sentiment words, we used a random label assignment.
 
 ### IBM
 (Partly) Implementation of the system described in "Stance Classification of Context-Dependent Claims" from Bar-Haim et al.
