@@ -10,11 +10,15 @@ Takes the following arguments:
 | --mode  | Use training set (previously splitted to train, dev and test sets) for the training process (train_validation) or choose the test set (train_test)  | train_validation |
 | --dataset  | Use within or cross dataset  | within |
 | -- lemmatized | After the first experiment the lemmatized data can be used | false |
-| --vect | Vectorizer used for feature extraction: if True - CountVectorizer, else - TfidfVectorizer | false |
+| --vect | Vectorizer used for feature extraction: if True - CountVectorizer, else - TfidfVectorizer | true |
 | --ngram_range_1 | First value of ngram range used for feature extraction (choose between 3 and 1) | 3 |
 | --ngram_range_2 | Second value of ngram range used for feature extraction (choose between 1, 2 and 3) | 3 |
 | --activation_th | Activation Threshold of output | 0.5 |
+If the training set need to be splitted first, you can change the path in the "read_fin_data" function to the path to the traning set and then use the train_test mode option. 
 
+Example: main.py --mode train_validation --lemmatized --ngram_range_1 1 --activation_th 0.555
+
+This set of option would perform an experiment on the training set, using already lemmatized data, CountVectorizer, 1-3-grams and acivation threshold of 0.555
 
 
 ### rule-based 
