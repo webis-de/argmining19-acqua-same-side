@@ -15,13 +15,14 @@ Takes the following arguments:
 | --ngram_range_2 | Second value of ngram range used for feature extraction (choose between 1, 2 and 3) | 3 |
 | --activation_th | Activation Threshold of output | 0.5 |
 
-All lemmatized arguments will be saved to the "lem"-folder in the data path.
-
-If the training set need to be splitted first, you can change the path in the "read_fin_data" function to the path to the traning set and then use the train_test mode option. 
-
 Example: main.py --mode train_validation --lemmatized --ngram_range_1 1 --activation_th 0.555
 
 This set of option would perform an experiment on the training set, using already lemmatized data, CountVectorizer, 1-3-grams and acivation threshold of 0.555
+
+Notes:
+All lemmatized arguments will be saved to the "lem"-folder in the data path.
+
+If the training set need to be splitted first, you can change the path in the "read_fin_data" function to the path to the traning set and then use the train_test mode option. 
 
 
 ### rule-based 
