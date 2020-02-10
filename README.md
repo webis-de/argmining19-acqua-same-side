@@ -6,7 +6,7 @@ We used a lightGBM a gradient boosting framework from Microsoft that uses tree b
 Takes the following arguments:
 
 | Option  | Description | Default |
-| ------------- | ------------- | ------------- |
+| ------------------- | ------------- | ------------- |
 | --mode  | Use training set (previously splitted to train, dev and test sets) for the training process (train_validation) or choose the test set (train_test)  | train_validation |
 | --dataset  | Use within or cross dataset  | within |
 | -- lemmatized | After the first experiment the lemmatized data can be used | false |
